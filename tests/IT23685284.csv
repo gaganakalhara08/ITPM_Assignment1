@@ -7,7 +7,6 @@ Pos_Fun_0001,Interrogative greeting,S,aeyata kohomadha,ඇයට කොහොම
 ,,,,,,,Sinhala spelling and punctuation are correct.,Interrogative (question),,,,
 ,,,,,,,The question mark remains correctly placed.,S (<=30 characters),,,,
 ,,,,,,,,Accuracy validation,,,,
-
 Pos_Fun_0002,Simple daily sentence,S,mama gedhara yanavaa,මම ගෙදර යනවා,මම ගෙදර යනවා,Pass,Correct word mapping and sentence meaning preserved,Daily language usage,,,,
 ,,,,,,,,Simple sentence,,,,
 ,,,,,,,,S (<=30 characters),,,,
@@ -40,11 +39,11 @@ Pos_Fun_0007,Past tense,S,mama iiyee gedhara giyaa,"මම ඊයේ ගෙද�
 ,,,,,,,,S (<=30 characters),,,,
 ,,,,,,,,Accuracy validation,,,,
 ,,,,,,,,past tense,,,,
-Pos_Fun_0008,Joined words,S,mamageharayanavaa,"මමගෙදරයනවා
+Pos_Fun_0008,Joined words,S,mama gedhara yanavaa,"මම ගෙදර යනවා
 
 
 
-","මමගෙදරයනවා
+","මම ගෙදර යනවා
 
 
 
@@ -110,12 +109,12 @@ Pos_Fun_0014,Negative request,S,mata eeka epaa,"මට ඒක එපා
 ,,,,,,,,S (<=30 characters),,,,
 ,,,,,,,,Accuracy validation,,,,
 Pos_Fun_0015,Repeated words,S,hari hari hodhayi,"
-හරි හරි හොඳයි
+හරි හරි හොදයි
 
 
 
 ","
-හරි හරි හොඳයි
+හරි හරි හොදයි
 
 ",pass,Repetition preserved,Word combination / phrase pattern ,,,,
 ,,,,,,,,Simple sentence,,,,
@@ -235,27 +234,24 @@ Neg_Fun_0001,brand name transliteration error,S,mama iphone ekka gaththa,"මම
 ,,,,,,,, Accuracy validatio,,,,
 ,,,,,,,, S (<=30 characters) ,,,,
 ,,,,,,,, Past tense ,,,,
-Neg_Fun_0002,Extra spaces,M,mama    gedhara    yanavaa,"මම ගෙදර යනවා
+Neg_Fun_0002,Incorrect transliteration of English pronouns in mixed sentences,M,"""I am a boy. My name is Saman."" ooka thamayi eyaa kivve mata call eken","""I am a boy. My name is Saman."" ඕක තමයි එයා කිව්වෙ මට call එකෙන්
 
 
 
 
-
-","මම   ගෙදර   යනවා
-
-",fail,Spaces not normalized,Formatting (spaces / line breaks / paragraph) ,,,,
-,,,,,,,,Simple sentence ,,,,
+","""ඉ am a boy. My name ඉස් සමන්."" ඕක තමයි එයා කිව්වෙ මට call එකෙන්",fail,"The system incorrectly converts English pronoun ""I"" to ""ඉ"".",Empty/cleared input handling,,,,
+,,,,,,,"The English verb ""is"" is also mis-transliterated  ""ඉස්"", which alters the sentence meaning.",Pronoun variation (I/you/we/they) ,,,,
 ,,,,,,,,M (31–299 characters) ,,,,
-,,,,,,,,Formatting preservation,,,,
-Neg_Fun_0003,Date format,S,api 25/12/2025 Colombo yamu,"අපි 25/12/2025 Colombo යමු
+,,,,,,,,Robustness validation,,,,
+Neg_fun_0003,Detect missing word in simple sentence,S,mama bath nuvan ekka,"මම බත් කෑවා පවන් එක්ක.
 
 
 
-",අපි 25 / 12 / 2025 කොළඹ යමු,fail,Date format altered,Punctuation / numbers ,,,,
-,,,,,,,,future sentence ,,,,
+",මම බත් පවන් එක්ක,fail,The system fails to identify the missing word “කෑවා”,Empty/cleared input handling,,,,
+,,,,,,,,past sentence ,,,,
 ,,,,,,,,Robustness validation,,,,
 ,,,,,,,, S (<=30 characters) ,,,,
-Neg_Fun_0004,Mixed symbols,S,mama @ gedhara yanavaa,මම ගෙදර යනවා,"මම @ ගෙදර යනවා
+Neg_fun_0004,Mixed symbols,S,mama @ gedhara yanavaa,මම ගෙදර යනවා,"මම @ ගෙදර යනවා
 
 
 ",fail,Special character handling issue,Punctuation / numbers ,,,,
@@ -271,7 +267,7 @@ Neg_fun_0005,Repeated typo,S,kaeema kaana yanavaa,"කෑම කන්න යන
 ,,,,,,,,Simple sentence ,,,,
 ,,,,,,,,Robustness validation,,,,
 ,,,,,,,, S (<=30 characters) ,,,,
-Neg_Fun_0006,Grammar mismatch,S,oya gedhara yanavaa mama inne,"Correct Sinhala sentence
+Neg_fun_0006,Grammar mismatch,S,oya gedhara yanavaa mama inne,"Correct Sinhala sentence
 
 
 
@@ -280,7 +276,7 @@ Neg_Fun_0006,Grammar mismatch,S,oya gedhara yanavaa mama inne,"Correct Sinhala s
 ,,,,,,,, S (<=30 characters) ,,,,
 ,,,,,,,,Compound sentence ,,,,
 ,,,,,,,, Robustness validation,,,,
-Neg_Fun_0007,Emoji input,S,mama gedhara yanavaa 😊,"මම ගෙදර යනවා
+Neg_fun_0007,Emoji input,S,mama gedhara yanavaa 😊,"මම ගෙදර යනවා
 
 
 
@@ -289,7 +285,7 @@ Neg_Fun_0007,Emoji input,S,mama gedhara yanavaa 😊,"මම ගෙදර යන
 ,,,,,,,, S (<=30 characters) ,,,,
 ,,,,,,,,Simple sentence ,,,,
 ,,,,,,,, Robustness validation,,,,
-Neg_Fun_0008,code injection attemp,M,mata html and css code ekak dhenna,"මට html and css code එකක් දෙන්න
+Neg_fun_0008,code injection attemp,M,mata html and css code ekak dhenna,"මට html and css code එකක් දෙන්න
 
 
 
@@ -299,7 +295,7 @@ Neg_Fun_0008,code injection attemp,M,mata html and css code ekak dhenna,"මට 
 ,,,,,,,, Input validation,,,,
 ,,,,,,,,M (31–299 characters) ,,,,
 ,,,,,,,,Code-based input,,,,
-Neg_Fun_0009,cript injection attempt,M,mata javascript code ekak dhenna,"මට javaScript code එකක් දෙන්න
+Neg_fun_0009,cript injection attempt,M,mata javascript code ekak dhenna,"මට javaScript code එකක් දෙන්න
 
 
 ","මට ජවසcරිප්ට් code එකක් දෙන්න
@@ -309,7 +305,7 @@ Neg_Fun_0009,cript injection attempt,M,mata javascript code ekak dhenna,"මට 
 ",,,,
 ,,,,,,,,Code-based input,,,,
 ,,,,,,,,Input validation,,,,
-Neg_Fun_0010,Structured data input attempt,M,mata json file ekak dhenna,"මට json file එකක් දෙන්න
+Neg_fun_0010,Structured data input attempt,M,mata json file ekak dhenna,"මට json file එකක් දෙන්න
 
 ","මට ජ්සොන් file එකක් දෙන්න
 
