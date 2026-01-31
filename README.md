@@ -15,8 +15,8 @@ Technologies
 Setup Instructions
   Install Node.js
   Clone the repository
-  Install Playwright browsers:
-  npx playwright install
+  Install Playwright browsers: npx playwright install
+  npm install papaparse
   Run Tests
   Run all tests: npx playwright test
   
@@ -31,6 +31,7 @@ View HTML report:
 (npx playwright test --headed)
 
 Test Coverage
+add csv file for test cases ecel file
 Positive functional tests
 Negative functional tests
 UI real-time output update test
