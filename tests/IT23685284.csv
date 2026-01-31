@@ -1,0 +1,319 @@
+﻿,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+TC ID,Test case name,Input length type,Input,Expected output,Actual output,Status,Accuracy justification/ Description of issue type,What is covered by the test,,,,
+Pos_Fun_0001,Interrogative greeting,S,aeyata kohomadha,ඇයට කොහොමද,ඇයට කොහොමද,Pass,The greeting meaning is preserved.,Greeting / request / response,,,,
+,,,,,,,Sinhala spelling and punctuation are correct.,Interrogative (question),,,,
+,,,,,,,The question mark remains correctly placed.,S (<=30 characters),,,,
+,,,,,,,,Accuracy validation,,,,
+
+Pos_Fun_0002,Simple daily sentence,S,mama gedhara yanavaa,මම ගෙදර යනවා,මම ගෙදර යනවා,Pass,Correct word mapping and sentence meaning preserved,Daily language usage,,,,
+,,,,,,,,Simple sentence,,,,
+,,,,,,,,S (<=30 characters),,,,
+,,,,,,,,,,,,
+Pos_Fun_0003,Imperative command,S,vahaama enna,වහාම එන්න,වහාම එන්න,Pass,Command form correctly translated,Daily language usage,,,,
+,,,,,,,,Imperative (command),,,,
+,,,,,,,,S (<=30 characters),,,,
+,,,,,,,,,,,,
+Pos_Fun_0004,Negative sentence,S,mama ehema karannee naehae,මම එහෙම කරන්නේ නැහැ,මම එහෙම කරන්නේ නැහැ,Pass,Negation handled correctly,Daily language usage,,,,
+,,,,,,,, Accuracy validation,,,,
+,,,,,,,,S (<=30 characters),,,,
+,,,,,,,,,,,,
+Pos_Fun_0005,Polite request,M,karuNaakaralaa mata udhavvak karanna puLuvandha?,කරුණාකරලා මට උදව්වක් කරන්න පුළුවන්ද?,කරුණාකරලා මට උදව්වක් කරන්න පුළුවන්ද?,Pass,Polite tone preserved,Greeting / request / response ,,,,
+,,,,,,,,Interrogative (question) ,,,,
+,,,,,,,, M (31–299 characters) ,,,,
+,,,,,,,,Accuracy validation,,,,
+Pos_Fun_0006,Compound sentence,M,api kaeema kanna yanavaa saha passe kathaa karamu,"අපි කෑම කන්න යනවා සහ පස්සෙ කතා කරමු
+
+","අපි කෑම කන්න යනවා සහ පස්සෙ කතා කරමු
+
+",pass,Compound structure converted correctly, Accuracy validation,,,,
+,,,,,,,,Daily language usage ,,,,
+,,,,,,,, Compound sentence ,,,,
+,,,,,,,, M (31–299 characters) ,,,,
+Pos_Fun_0007,Past tense,S,mama iiyee gedhara giyaa,"මම ඊයේ ගෙදර ගියා
+
+","මම ඊයේ ගෙදර ගියා
+
+",pass,Past tense preserved,Daily language usage ,,,,
+,,,,,,,,S (<=30 characters),,,,
+,,,,,,,,Accuracy validation,,,,
+,,,,,,,,past tense,,,,
+Pos_Fun_0008,Joined words,S,mamageharayanavaa,"මමගෙදරයනවා
+
+
+
+","මමගෙදරයනවා
+
+
+
+",pass,Joined words handled correctly,Typographical error handling ,,,,
+,,,,,,,,Simple sentence ,,,,
+,,,,,,,,S (<=30 characters),,,,
+,,,,,,,,Robustness validation,,,,
+Pos_Fun_0009,Time format,S,7.30 AM ta enna,"7.30 AM ට එන්න
+
+
+","7.30 AM ට එන්න
+
+
+
+",pass,Time format preserved,Punctuation / numbers ,,,,
+,,,,,,,,Imperative (command) ,,,,
+,,,,,,,,Accuracy validation,,,,
+,,,,,,,,S (<=30 characters),,,,
+Pos_Fun_0010,English technical word,S,Zoom meeting ekak thiyennee,"Zoom meeting එකක් තියෙන්නේ
+
+
+
+","Zoom meeting එකක් තියෙන්නේ
+",pass,English term preserved,Mixed Singlish + English ,,,,
+,,,,,,,,S (<=30 characters),,,,
+,,,,,,,, Simple sentence ,,,,
+,,,,,,,, Accuracy validation,,,,
+Pos_Fun_0011,Place name,M,api trip eka Kandy valata yamudha,"අපි trip එක Kandy වලට යමුද
+
+","අපි trip එක Kandy වලට යමුද
+
+",pass,Place name retained, Accuracy validation,,,,
+,,,,,,,,Names / places / common English words ,,,,
+,,,,,,,, M (31–299 characters) ,,,,
+,,,,,,,,Mixed Singlish + English ,,,,
+Pos_Fun_0012,Future tense,S,mama heta enavaa,"මම හෙට එනවා
+
+
+
+
+
+","මම හෙට එනවා
+
+
+
+",pass,Future tense correct,Daily language usage ,,,,
+,,,,,,,,Future tense ,,,,
+,,,,,,,,S (<=30 characters),,,,
+,,,,,,,, Accuracy validation,,,,
+Pos_Fun_0013,Plural pronoun,S,api yamu,අපි යමු,"අපි යමු
+
+",pass,Plural pronoun preserved,Daily language usage,,,,
+,,,,,,,,S (<=30 characters),,,,
+,,,,,,,, Pronoun variation ,,,,
+,,,,,,,, Accuracy validation,,,,
+Pos_Fun_0014,Negative request,S,mata eeka epaa,"මට ඒක එපා
+
+","මට ඒක එපා
+
+
+",pass,Negative meaning preserved,Daily language usage ,,,,
+,,,,,,,,Negation (negative form) ,,,,
+,,,,,,,,S (<=30 characters),,,,
+,,,,,,,,Accuracy validation,,,,
+Pos_Fun_0015,Repeated words,S,hari hari hodhayi,"
+හරි හරි හොඳයි
+
+
+
+","
+හරි හරි හොඳයි
+
+",pass,Repetition preserved,Word combination / phrase pattern ,,,,
+,,,,,,,,Simple sentence,,,,
+,,,,,,,,S (≤30 characters) ,,,,
+,,,,,,,,Accuracy validation,,,,
+Pos_Fun_0016,Apology phrase,M,samaavenna eeka athvaeradhiimak,"සමාවෙන්න ඒක අත්වැරදීමක්
+
+
+
+
+
+","සමාවෙන්න ඒක අත්වැරදීමක්
+
+",pass,Apology translated correctly,Greeting / request / response ,,,,
+,,,,,,,,Simple sentence ,,,,
+,,,,,,,,M (31–299 characters) ,,,,
+,,,,,,,, Accuracy validation,,,,
+Pos_Fun_0017,Present tense,S,mama dhaen vaeda karanavaa,මම දැන් වැඩ කරනවා,"මම දැන් වැඩ කරනවා
+
+",pass,Present tense preserved,Daily language usage ,,,,
+,,,,,,,,Present tense ,,,,
+,,,,,,,, Accuracy validation,,,,
+,,,,,,,,S (<=30 characters) ,,,,
+Pos_Fun_0018,Imperative give,S,eeka dhenna,"ඒක දෙන්න
+","ඒක දෙන්න
+
+
+
+",pass,Command handled correctly,Daily language usage ,,,,
+,,,,,,,,Imperative (command) ,,,,
+,,,,,,,, S (<=30 characters) ,,,,
+,,,,,,,,Accuracy validation,,,,
+Pos_Fun_0019,English abbreviation,S,magee NIC number eka dhenna,"මගේ NIC number එක දෙන්න
+
+
+
+","මගේ NIC number එක දෙන්න
+
+",pass,Abbreviation preserved,Mixed Singlish + English ,,,,
+,,,,,,,,Imperative (command) ,,,,
+,,,,,,,,S(<= 30characters) ,,,,
+,,,,,,,,Accuracy validation,,,,
+Pos_Fun_0020,Place with action,S,siiyaa Colombo yanna hadhannee,සීයා Colombo යන්න හදන්නේ,"සීයා Colombo යන්න හදන්නේ
+
+",pass,Place name retained,Mixed Singlish + English ,,,,
+,,,,,,,,Names / places / common English words ,,,,
+,,,,,,,, Present tense ,,,,
+,,,,,,,,S(<= 30characters) ,,,,
+Pos_Fun_0021,Complex condition,M,oya enavaanam mama balan innavaa,"ඔය එනවානම් මම බලන් ඉන්නවා
+
+
+
+
+
+","ඔය එනවානම් මම බලන් ඉන්නවා
+
+
+
+",pass,Conditional structure preserved,Daily language usage ,,,,
+,,,,,,,,Complex sentence ,,,,
+,,,,,,,,M (31–299 characters) ,,,,
+,,,,,,,,Accuracy validation,,,,
+Pos_Fun_0022,Phrase pattern,S,kaeema kanna yamu,"කෑම කන්න යමු
+
+
+
+
+
+","කෑම කන්න යමු
+
+
+
+",pass,Phrase converted correctly,Word combination / phrase pattern ,,,,
+,,,,,,,, S (≤30 characters) ,,,,
+,,,,,,,, Simple sentence,,,,
+,,,,,,,, ,,,,
+Pos_Fun_0023,Line breaks,M,"api passee
+kathaa karamu","අපි පස්සේ
+කතා කරමු
+
+
+
+","අපි පස්සේ
+කතා කරමු
+
+",pass,Line breaks preserved,Formatting (spaces / line breaks / paragraph) ,,,,
+,,,,,,,,Simple sentence ,,,,
+,,,,,,,, M (31–299 characters) ,,,,
+,,,,,,,, Formatting preservation,,,,
+Pos_Fun_0024,Currency format,S,Rs. 5000 gaththa,"Rs. 5000 ගත්ත
+
+","Rs. 5000 ගත්ත
+
+
+
+",pass,Currency preserved,Punctuation / numbers ,,,,
+,,,,,,,, Accuracy validation,,,,
+,,,,,,,,S(<= 30characters) ,,,,
+,,,,,,,,past tense,,,,
+Pos_UI_0001,Real-time update,S,mama gedhara yanavaa,"මම ගෙදර යනවා
+
+
+
+","
+මම ගෙදර යනවා
+
+",pass,Real-time behavior works,Daily language usage ,,,,
+,,,,,,,,S(<= 30characters) ,,,,
+,,,,,,,,Real-time output update behavior,,,,
+,,,,,,,,Simple sentence ,,,,
+Neg_Fun_0001,brand name transliteration error,S,mama iphone ekka gaththa,"මම iphone එක්ක ගත්ත
+
+
+
+","මම ඉප්හොනෙ එක්ක ගත්ත
+",fail,The English brand name “iPhone” is retained without unnecessary translation.,Mixed Singlish + English ,,,,
+,,,,,,,, Accuracy validatio,,,,
+,,,,,,,, S (<=30 characters) ,,,,
+,,,,,,,, Past tense ,,,,
+Neg_Fun_0002,Extra spaces,M,mama    gedhara    yanavaa,"මම ගෙදර යනවා
+
+
+
+
+
+","මම   ගෙදර   යනවා
+
+",fail,Spaces not normalized,Formatting (spaces / line breaks / paragraph) ,,,,
+,,,,,,,,Simple sentence ,,,,
+,,,,,,,,M (31–299 characters) ,,,,
+,,,,,,,,Formatting preservation,,,,
+Neg_Fun_0003,Date format,S,api 25/12/2025 Colombo yamu,"අපි 25/12/2025 Colombo යමු
+
+
+
+",අපි 25 / 12 / 2025 කොළඹ යමු,fail,Date format altered,Punctuation / numbers ,,,,
+,,,,,,,,future sentence ,,,,
+,,,,,,,,Robustness validation,,,,
+,,,,,,,, S (<=30 characters) ,,,,
+Neg_Fun_0004,Mixed symbols,S,mama @ gedhara yanavaa,මම ගෙදර යනවා,"මම @ ගෙදර යනවා
+
+
+",fail,Special character handling issue,Punctuation / numbers ,,,,
+,,,,,,,,Simple sentence ,,,,
+,,,,,,,, S (<=30 characters) ,,,,
+,,,,,,,,Robustness validation,,,,
+Neg_fun_0005,Repeated typo,S,kaeema kaana yanavaa,"කෑම කන්න යනවා
+
+
+
+","කෑම කාන යනවා
+",fail,Incorrect word mapping,Typographical error handling ,,,,
+,,,,,,,,Simple sentence ,,,,
+,,,,,,,,Robustness validation,,,,
+,,,,,,,, S (<=30 characters) ,,,,
+Neg_Fun_0006,Grammar mismatch,S,oya gedhara yanavaa mama inne,"Correct Sinhala sentence
+
+
+
+","Broken structure
+",fail,Sentence order incorrect,Daily language usage ,,,,
+,,,,,,,, S (<=30 characters) ,,,,
+,,,,,,,,Compound sentence ,,,,
+,,,,,,,, Robustness validation,,,,
+Neg_Fun_0007,Emoji input,S,mama gedhara yanavaa 😊,"මම ගෙදර යනවා
+
+
+
+","Emoji retained
+",fail,Emoji not handled,Punctuation / numbers ,,,,
+,,,,,,,, S (<=30 characters) ,,,,
+,,,,,,,,Simple sentence ,,,,
+,,,,,,,, Robustness validation,,,,
+Neg_Fun_0008,code injection attemp,M,mata html and css code ekak dhenna,"මට html and css code එකක් දෙන්න
+
+
+
+","
+මට හ්ට්ම්ල් and cස්ස් code එකක් දෙන්න
+",fail,"The input contains HTML and CSS code, which is not valid Singlish text",Unsupported input format ,,,,
+,,,,,,,, Input validation,,,,
+,,,,,,,,M (31–299 characters) ,,,,
+,,,,,,,,Code-based input,,,,
+Neg_Fun_0009,cript injection attempt,M,mata javascript code ekak dhenna,"මට javaScript code එකක් දෙන්න
+
+
+","මට ජවසcරිප්ට් code එකක් දෙන්න
+",fail,"The input contains JavaScript-related content, which is not valid Singlish text","Unsupported input format
+",,,,
+,,,,,,,,"M (31–299 characters)
+",,,,
+,,,,,,,,Code-based input,,,,
+,,,,,,,,Input validation,,,,
+Neg_Fun_0010,Structured data input attempt,M,mata json file ekak dhenna,"මට json file එකක් දෙන්න
+
+","මට ජ්සොන් file එකක් දෙන්න
+
+",fail,The input represents structured data request rather than natural Singlish language,Unsupported input format,,,,
+,,,,,,,,Input validation,,,,
+,,,,,,,,M (31–299 characters) ,,,,
+,,,,,,,,Structured data input,,,,
